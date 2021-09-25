@@ -51,7 +51,7 @@ public class UsuarioController {
        return this.usuarioService.inserirOuAtualizar(usuario);
    }
 
-   @DeleteMapping("{id}")
+   @DeleteMapping("/{id}")
    public void apagarUsuario(@PathVariable("id") Long id) {
        this.usuarioService.apagar(id);
    }
